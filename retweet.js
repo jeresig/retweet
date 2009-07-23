@@ -126,6 +126,7 @@ function loaded(){
 
 	if ( elems.length && RetweetJS.styling ) {
 		var style = document.createElement("style");
+		
 		style.type = "text/css";
 
 		try {
@@ -135,8 +136,12 @@ function loaded(){
 				style.styleSheet.cssText = RetweetJS.styling;
 			}
 		}
-
-		document.body.appendChild( style );
+		var head = document.getElementsByTagName("head")[0];
+		if( head == null ) {
+			document.body.appendChild( style );
+		} else {
+			head.appendChild( style );
+		}
 	}
 
 	for ( var i = 0; i < elems.length; i++ ) {
