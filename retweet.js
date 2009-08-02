@@ -18,8 +18,7 @@ window.RetweetJS = {
 	bitly_key: "R_6287c92ecaf9efc6f39e4f33bdbf80b1",
 
 	// The text to replace the links with
-	link_text: (/windows/i.test( navigator.userAgent) ? "&#9658;" : "&#9851;") +
-		"&nbsp;Retweet",
+	link_text: "&nbsp;Retweet",
 
 	// What # to show (Use "clicks" for # of clicks or "none" for nothing)
 	count_type: "clicks",
