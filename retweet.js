@@ -156,7 +156,7 @@ function loaded(){
 
 		elem.innerHTML = "<span>" + RetweetJS.link_text + "</span>";
 		elem.title = "";
-		elem.href = "http://twitter.com/home?status=" +
+		elem.href = "http://twitter.com/?status=" +
 			encodeURIComponent(RetweetJS.prefix + origText + " http://bit.ly/");
 
 		if ( urlElem[ href ] ) {
